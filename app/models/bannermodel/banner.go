@@ -1,9 +1,10 @@
 package bannermodel
 
 import (
-	"github.com/qit-team/snow-core/db"
 	"sync"
 	"time"
+
+	"github.com/qit-team/snow-core/db"
 )
 
 var (

@@ -22,7 +22,7 @@ func FormatList(bannerList []*bannermodel.Banner) (res []*BannerFormatter) {
 	return res
 }
 
-//单条消息的格式化，
+// 单条消息的格式化，
 func FormatOne(banner *bannermodel.Banner) (res *BannerFormatter) {
 	res = &BannerFormatter{
 		Id:    int(banner.Id),

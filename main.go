@@ -77,7 +77,7 @@ func main() {
 	}
 }
 
-//执行(status|stop|restart)命令
+// 执行(status|stop|restart)命令
 func handleCmd(opts *config.Options) {
 	if opts.Cmd != "" {
 		pidFile := opts.GenPidFile()

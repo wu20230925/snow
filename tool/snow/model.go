@@ -83,7 +83,7 @@ func init() {
 	mt = new(modelTemplate)
 }
 
-//new model
+// new model
 func runModel(ctx *cli.Context) (err error) {
 	if ctx.Args().Len() == 0 {
 		return errors.New("required model name")
@@ -169,7 +169,7 @@ func runModel(ctx *cli.Context) (err error) {
 	return nil
 }
 
-//将蛇形命名法转换为go包名连写命名法
+// 将蛇形命名法转换为go包名连写命名法
 func packageCase(name string) string {
 	name = strings.ToLower(name)
 	rs := []rune(name)
@@ -185,7 +185,7 @@ func packageCase(name string) string {
 	return buffer.String()
 }
 
-//目录是否存在
+// 目录是否存在
 func isDirExist(path string) bool {
 	fi, e := os.Stat(path)
 	if e != nil {
@@ -194,7 +194,7 @@ func isDirExist(path string) bool {
 	return fi.IsDir()
 }
 
-//将数据库table的定义转换为数据结构实体定义
+// 将数据库table的定义转换为数据结构实体定义
 func genTableEntity(table *schemas.Table) string {
 	columns := table.Columns()
 	snakeMapper := new(core.SnakeMapper)

@@ -7,7 +7,7 @@ import (
 
 var options *Options
 
-//------------------------启动命令配置
+// ------------------------启动命令配置
 type Options struct {
 	ShowVersion bool
 	Cmd         string
@@ -31,7 +31,7 @@ func parseOptions() *Options {
 	return opts
 }
 
-//获取启动命令配置
+// 获取启动命令配置
 func GetOptions() *Options {
 	if options == nil {
 		options = parseOptions()
@@ -39,7 +39,7 @@ func GetOptions() *Options {
 	return options
 }
 
-//pid进程号的保存路径
+// pid进程号的保存路径
 func (opts *Options) GenPidFile() string {
 	return strings.TrimRight(opts.PidDir, "/") + "/" + opts.App + ".pid"
 }

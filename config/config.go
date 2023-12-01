@@ -1,9 +1,10 @@
 package config
 
 import (
+	"os"
+
 	"github.com/BurntSushi/toml"
 	"github.com/qit-team/snow-core/config"
-	"os"
 )
 
 const (

@@ -34,7 +34,7 @@ type TestValidatorRequest struct {
 	Addresses []*Address `json:"addresses" validate:"required,dive,required"`
 }
 
-//  Address houses a users address information
+// Address houses a users address information
 type Address struct {
 	Street string `json:"street" validate:"required" example:"huandaodonglu"`
 	City   string `json:"city" validate:"required" example:"xiamen"`

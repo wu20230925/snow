@@ -2,8 +2,9 @@ package basejob
 
 import (
 	"context"
-	"github.com/qit-team/work"
 	"sync"
+
+	"github.com/qit-team/work"
 )
 
 var (

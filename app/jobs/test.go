@@ -2,8 +2,9 @@ package jobs
 
 import (
 	"fmt"
-	"github.com/qit-team/work"
 	"time"
+
+	"github.com/qit-team/work"
 )
 
 func test(task work.Task) work.TaskResult {

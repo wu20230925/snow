@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/fatih/color"
-	"github.com/urfave/cli/v2"
 	"go/build"
 	"os"
 	"os/exec"
@@ -13,6 +11,9 @@ import (
 	"sort"
 	"strings"
 	"time"
+
+	"github.com/fatih/color"
+	"github.com/urfave/cli/v2"
 )
 
 const (

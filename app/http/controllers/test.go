@@ -57,7 +57,7 @@ func HandleTest(c *gin.Context) {
 	return
 }
 
-//测试数据库服务示例
+// 测试数据库服务示例
 func GetBannerList(c *gin.Context) {
 	pageStr := c.Query("page")
 	limitStr := c.DefaultQuery("limit", "20")

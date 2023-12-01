@@ -3,12 +3,13 @@ package controllers
 import (
 	"bytes"
 	"encoding/json"
+	"io/ioutil"
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	"github.com/qit-team/snow-core/log/logger"
 	"github.com/qit-team/snow/app/constants/errorcode"
 	"gopkg.in/go-playground/validator.v9"
-	"io/ioutil"
-	"net/http"
 )
 
 /**
@@ -79,7 +80,7 @@ func GenRequest(c *gin.Context, request interface{}) (err error) {
 	return err
 }
 
-//重复读取body
+// 重复读取body
 func ReadBody(c *gin.Context) (body []byte, err error) {
 	body, err = ioutil.ReadAll(c.Request.Body)
 	if err != nil {
